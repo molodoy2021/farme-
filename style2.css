@@ -1,0 +1,181 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #5ec563;
+    color: #333;
+}
+
+/* Стили для шапки */
+.site-header {
+    background-image: url("static/images/header-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.header-content {
+    position: relative;
+    z-index: 2;
+}
+
+.site-header h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.site-header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.site-header nav li {
+    margin: 0 15px;
+}
+
+.site-header nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+.site-header nav a:hover {
+    color: #ddd;
+}
+
+/* Стили для основного контента */
+main {
+    padding: 20px;
+}
+
+.meat-products {
+    margin-bottom: 30px;
+}
+
+.meat-category {
+    margin-bottom: 20px;
+}
+
+.meat-category h3 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    text-align: center; /* Выравниваем заголовок по центру */
+}
+
+.product-grid {
+    display: flex;                  /* Flexbox для отображения в ряд */
+    flex-wrap: wrap;                /* Перенос на новую строку, если не помещается */
+    justify-content: space-around; /* Равномерное распределение между элементами */
+}
+
+.product-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: calc(30% - 20px);            /* Три элемента в ряд с учетом отступов */
+    box-sizing: border-box;            /* Чтобы padding не увеличивал ширину */
+    margin-bottom: 20px;              /* Отступ между элементами */
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.product-item h4 {
+    font-size: 1.3em;
+    margin-bottom: 5px;
+}
+
+.product-item p {
+    font-size: 1em;
+}
+
+/* Адаптивность для мобильных устройств (ширина экрана менее 768px) */
+@media (max-width: 768px) {
+    .product-item {
+        width: calc(45% - 10px);   /* Два элемента в ряд */
+    }
+}
+
+/* Для очень маленьких экранов - один элемент в ряд */
+@media (max-width: 480px) {
+    .product-item {
+        width: 100%;              /* Один элемент в ряд */
+    }
+}
+
+/* Стили для подвала */
+.site-footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.contact-form {
+    text-align: left;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.confirm-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.confirm-button:hover {
+    background-color: #3e8e41;
+}
+
+.footer-logo {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    width: 50px;
+    height: auto;
+}

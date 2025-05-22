@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <title>farm</title>
+    <link rel="stylesheet" href="static/styles/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-content">
+        <h1>Фермерские продукты - Сметанкино</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#prodyct">Продукты</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+  <section class="about-farm">
+      <h2>О нашей ферме</h2>
+      <div class="about-content">
+          <img src="static/images/Animals on farm.jpg" alt="Наша ферма" class="farm-image">
+          <div class="farm-description">
+              <p>Добро пожаловать на ферму "Сметанкино"! Мы - небольшое фермерское хозяйство, расположенное в экологически чистом районе, вдали от городской суеты.</p>
+              <p>Мы выращиваем наши продукты с любовью и заботой, используя только натуральные методы ведения хозяйства.  Наши животные содержатся в комфортных условиях и получают сбалансированное питание.</p>
+              <p>Мы гордимся тем, что предлагаем вам свежие, вкусные и полезные продукты, выращенные на нашей земле.  Попробуйте наши молочные продукты, мясо, яйца и овощи - и вы почувствуете вкус настоящей, фермерской еды!</p>
+              <p>Приезжайте к нам в гости!  Мы всегда рады новым друзьям!</p>
+          </div>
+      </div>
+  </section>
+</main>
+
+  <main>
+      <section class="products" id="prodyct">
+          <h2>Наши продукты</h2>
+          <div class="product-grid">
+
+            <a href="index2.html" >
+              <div class="product-item">
+                  <img src="static/images/корова.jpg" alt="Мясо">
+                  <h3>Мясные продукты</h3>
+              </div>
+            </a>
+          
+              <div class="product-item">
+                  <img src="static/images/milk.jpg" alt="Молоко">
+                  <h3>Молочные продукты</h3>
+              </div>
+
+              <div class="product-item">
+                  <img src="static/images/eggs.jpg" alt="Яйца">
+                  <h3>Яйца</h3>
+              </div>
+
+              <div class="product-item">
+                  <img src="static/images/cheeses.jpg" alt="Сыр">
+                  <h3>Сыры</h3>
+              </div>
+
+              <div class="product-item">
+                  <img src="static/images/vegetables.jpg" alt="Овощи">
+                  <h3>Овощи</h3>
+              </div>
+          </div>
+      </section>
+  </main>
+
+  <footer>
+    <div class="contact-form" id="contact">
+        <h3>Оставьте свои контакты:</h3>
+        <div class="input-group">
+            <label for="firstName">Имя:</label>
+            <input type="text" id="firstName" placeholder="Иван">
+        </div>
+        <div class="input-group">
+            <label for="lastName">Фамилия:</label>
+            <input type="text" id="lastName" placeholder="Иванов">
+        </div>
+        <div class="input-group">
+            <label for="middleName">Отчество:</label>
+            <input type="text" id="middleName" placeholder="Иванович">
+        </div>
+        <div class="input-group">
+            <label for="phone">Телефон:</label>
+            <input type="tel" id="phone" placeholder="+7 (999) 123-45-67">
+        </div>
+        <button id="confirmButton" class="confirm-button">Подтвердить</button>
+    </div>
+    <img class="logo" src="static/images/farm.jpg" alt="Логотип" class="footer-logo">
+</footer>
+
+<script>
+    document.getElementById("confirmButton").addEventListener("click", function() {
+        var firstName = document.getElementById("firstName").value;
+        var lastName = document.getElementById("lastName").value;
+        var middleName = document.getElementById("middleName").value;
+        var phone = document.getElementById("phone").value;
+
+        alert("Вы ввели:\n" +
+              "Имя: " + firstName + "\n" +
+              "Фамилия: " + lastName + "\n" +
+              "Отчество: " + middleName + "\n" +
+              "Телефон: " + phone);
+    });
+</script>
+
+</footer>
+</body>
+</html>
+      
